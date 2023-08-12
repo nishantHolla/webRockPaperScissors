@@ -62,10 +62,10 @@ main {
 }
 
 .player-move-container {
-	min-width: 50%;
+	width: 100%;
 
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
 	gap: 0.5rem;
@@ -74,7 +74,9 @@ main {
 .player-move-btn {
 	background: none;
 	border: none;
-	flex: 1;
+	flex: 0 1 auto;
+	width: 30%;
+	max-width: 160px;
 
 	display: flex;
 	flex-flow: row wrap;
@@ -86,7 +88,6 @@ main {
 	background: var(--white);
 	padding: 1rem;
 	flex: 1 1 auto;
-	/* max-width: 150px; */
 
 	display: flex;
 	flex-flow: column nowrap;
@@ -95,11 +96,13 @@ main {
 }
 
 .move-card-emoji {
-	font-size: clamp(4rem, 5vw, 8rem);
+	font-size: clamp(2rem, 5vw, 8rem);
+	flex: 1;
 }
 
 .move-card-text {
-	font-size: clamp(1rem, 2vw, 3rem);
+	flex: 1;
+	font-size: clamp(0.8rem, 2vw, 3rem);
 }
 
 .game-status-container {
@@ -126,7 +129,8 @@ main {
 }
 
 .status-card {
-	min-width: 150px;
+	max-width: 160px;
+	width: 30%;
 }
 
 .game-score {
