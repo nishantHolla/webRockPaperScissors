@@ -14,19 +14,19 @@
 		<main>
 			<h2 class="instruction">Make your move</h2>
 			<div class="player-move-container">
-				<button type="button" class="player-move-btn player-move-rock-btn">
+				<button type="button" data-move-id="rock" class="player-move-btn player-move-rock-btn">
 					<div class="move-card move-card-rock">
 						<div class="move-card-emoji move-card-rock-emoji">🪨</div>
 						<div class="move-card-text move-card-rock-text">Rock</div>
 					</div>
 				</button>
-				<button type="button" class="player-move-btn player-move-paper-btn">
+				<button type="button" data-move-id="paper" class="player-move-btn player-move-paper-btn">
 					<div class="move-card move-card-paper">
 						<div class="move-card-emoji move-card-paper-emoji">📜</div>
 						<div class="move-card-text move-card-paper-text">Paper</div>
 					</div>
 				</button>
-				<button type="button" class="player-move-btn player-move-scissors-btn">
+				<button type="button" data-move-id="scissors" class="player-move-btn player-move-scissors-btn">
 					<div class="move-card move-card-scissors">
 						<div class="move-card-emoji move-card-scissors-emoji">✂️</div>
 						<div class="move-card-text move-card-scissors-text">Scissors</div>
@@ -34,15 +34,15 @@
 				</button>
 			</div>
 			<div class="game-status-container">
-				<div class="player-status status-card">
+				<div class="player-status status-container">
 					<h3>You played</h3>
-					<div> </div>
 				</div>
-				<div class="comuter-status status-card">
+				<div class="computer-status status-container">
 					<h3>Computer played</h3>
-					<div> </div>
 				</div>
+				<h2 class="game-result"></h2>
 			</div>
+			<h4 class="game-score"></h4>
 		</main>
 		<footer>
 			Made by&nbsp<a href="https://github.com/nishantHolla">Nishant Holla</a>
