@@ -42,3 +42,23 @@ header {
 #game-title {
 	color: var(--white)
 }
+
+/* -------------------- */
+
+footer {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 100px;
+}
+
+footer a {
+	text-decoration: none;
+	color: var(--gray);
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
