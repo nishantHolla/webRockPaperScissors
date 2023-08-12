@@ -40,6 +40,7 @@ header {
 }
 
 .game-title {
+	text-align: center;
 	color: var(--white)
 }
 
@@ -58,6 +59,7 @@ main {
 
 .instruction {
 	font-size: clamp(2.5rem, 3vw, 4rem);
+	text-align: center;
 	margin: 0;
 }
 
@@ -106,6 +108,7 @@ main {
 }
 
 .game-status-container {
+	align-self: stretch;
 	display: flex;
 	flex-flow: row wrap;
 	gap: 1rem;
@@ -115,12 +118,18 @@ main {
 
 .status-container {
 	font-size: clamp(1.3rem, 3vw, 2rem);
-	min-width: 310px;
+	width: 45%;
+	max-width: 400px;
+	text-align: center;
 
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
+}
+
+.status-heading {
+	font-size: clamp(1rem, 2vw, 3rem);
 }
 
 .game-result {
@@ -129,8 +138,9 @@ main {
 }
 
 .status-card {
-	max-width: 160px;
+	flex: 0 1 auto;
 	width: 30%;
+	max-width: 160px;
 }
 
 .game-score {
