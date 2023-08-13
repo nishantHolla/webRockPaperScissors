@@ -135,6 +135,7 @@ main {
 .game-result {
 	width: 100%;
 	text-align: center;
+	margin: 0;
 }
 
 .status-card {
