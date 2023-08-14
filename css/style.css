@@ -153,11 +153,11 @@ main {
 footer {
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: flex-end;
 	padding: 5px;
 
-	min-height: 100px;
+	min-height: 5vmax;
 }
 
 footer a {
@@ -167,4 +167,8 @@ footer a {
 
 footer a:hover {
 	text-decoration: underline;
+}
+
+footer img {
+	width: 30px;
 }
